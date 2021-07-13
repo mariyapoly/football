@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* -------------
+    common styles
+------------- */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+}
+ul {
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+/* -------------
+    navbar styles
+------------- */
+header {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+nav {
+    width: 1160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu {
+    display: flex;
+}
+.menu li {
+    margin-right: 36px;
+    list-style: none;
+}
+.menu li a {
+    color: #ffffff;
+    font-weight: 500;
+    transition: all linear 0.3s;
+}
+.menu li:hover a {
+    color: #E02C6D;
+}
+.login-button {
+    color: #ffffff;
+    font-weight: 500;
+    padding: 10px 25px 10px 55px;
+    display: inline-block;
+    background: #E02C6D;
+    position: relative;
+    transition: all linear 0.3s;
+}
+.login-button:hover {
+    background: #ffffff;
+    color: #E02C6D;
+}
+.fa-sign-in-alt {
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 26px;
+    transform: translateY(-50%);
+}
+/* -------------
+    banner-area styles
+------------- */
+.banner-area {
+    background: #2D25A0;
+    display: flex;
+    justify-content: center;
+    padding: 135px 0 75px;
+}
+.banner-container {
+    width: 1140px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.banner-img img {
+    width: 100%;
+}
+.banner-title {
+    font-size: 64px;
+    color: #ffffff;
+    line-height: 80px;
+    font-weight: 700;
+    width: 485px;
+    margin-bottom: 18px;
+}
+.watch-button {
+    color: #ffffff;
+    display: inline-block;
+    font-weight: 500;
+    padding: 10px 50px 10px 25px;
+    background: #E02C6D;
+    position: relative;
+    transition: all linear 0.3s;
+}
+.watch-button:hover {
+    background: #ffffff;
+    color: #E02C6D;
+}
+.fa-arrow-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 25px;
+}
