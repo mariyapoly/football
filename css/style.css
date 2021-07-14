@@ -20,7 +20,7 @@ a {
 .container {
     width: 1050px;
 }
-header, .banner-area, .players {
+header, .banner-area, .players, .about{
     display: flex;
     justify-content: center;
 }
@@ -147,4 +147,67 @@ nav {
 .player-details {
     line-height: 26px;
     color: #6C6C6C;
+}
+
+/* -------------
+    about styles
+-------------  */
+.about {
+    background: url(../images/about-bg.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding: 110px 0 115px;
+}
+.about::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2D25A0;
+    opacity: 0.9;
+    z-index: -1;
+}
+.about-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    align-items: center;
+}
+.about-thumbnail img {
+    width: 100%;
+}
+.section-subtitle {
+    font-size: 20px;
+    color: #E02C6D;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.section-title {
+    font-size: 60px;
+    line-height: 1;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.about-discreption {
+    color: #ffffff;
+    line-height: 28px;
+}
+.readmore-button {
+    padding: 10px 25px;
+    display: inline-block;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: capitalize;
+    background: #E02C6D;
+    margin-top: 25px;
+    transition: all linear 0.3s;
+}
+.readmore-button:hover {
+    background: #ffffff;
+    color: #E02C6D;
 }
