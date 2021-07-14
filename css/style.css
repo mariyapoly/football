@@ -123,7 +123,7 @@ nav {
     players styles
 ------------- */
 .players {
-    padding: 70px 0 165px;
+    padding: 70px 0;
 }
 .players-wrapper {
     display: grid;
@@ -173,8 +173,14 @@ nav {
 }
 .about-wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 50px;
+}
+.about-thumbnail {
+    grid-column: 1/8;
+}
+.about-content {
+    grid-column: 8/-1;
 }
 .about-thumbnail img {
     width: 100%;
@@ -187,7 +193,7 @@ nav {
 }
 .section-title {
     font-size: 48px;
-    line-height: 1;
+    line-height: 60px;
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 700;
@@ -216,9 +222,6 @@ nav {
 ------------- */
 .highlights {
     padding: 120px 0 115px;
-}
-.highlight-container {
-    grid-column-gap: 60px;
 }
 .highlight-title {
     font-size: 48px;
@@ -266,3 +269,33 @@ nav {
 .counter-list {
     text-align: center;
 }
+/* -------------
+    footer styles
+------------- */
+footer {
+    text-align: center;
+    padding: 60px 0 65px;
+}
+.footer-logo {
+    margin-bottom: 15px;
+}
+.footer-logo img {
+    width: 450px;
+}
+.footer-social a {
+    width: 32px;
+    height: 32px;
+    background: rgba(11, 13, 23, 0.10);
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 32px;
+    color: #969BAB;
+    font-size: 15px;
+    margin: 0 6px;
+}
+.copyright {
+    margin-top: 20px;
+    color: #000000;
+    font-size: 18px;
+}
+
