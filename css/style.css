@@ -17,12 +17,17 @@ ul {
 a {
     text-decoration: none;
 }
+.container {
+    width: 1050px;
+}
+header, .banner-area, .players {
+    display: flex;
+    justify-content: center;
+}
 /* -------------
     navbar styles
 ------------- */
 header {
-    display: flex;
-    justify-content: center;
     position: absolute;
     top: 40px;
     left: 0;
@@ -75,8 +80,6 @@ nav {
 ------------- */
 .banner-area {
     background: #2D25A0;
-    display: flex;
-    justify-content: center;
     padding: 135px 0 75px;
 }
 .banner-container {
@@ -114,4 +117,34 @@ nav {
     top: 50%;
     transform: translateY(-50%);
     right: 25px;
+}
+/* ------------- 
+    players styles
+------------- */
+.players {
+    padding: 70px 0 165px;
+}
+.players-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.player {
+    background: #ffffff;
+    padding: 15px 15px 33px 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player-thubmnail img {
+    width: 100%;
+}
+.player-name {
+    font-size: 28px;
+    font-weight: 700;
+    color: #18191F;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+.player-details {
+    line-height: 26px;
+    color: #6C6C6C;
 }
