@@ -449,6 +449,8 @@ footer {
         width: 254px;
     }
 }
+
+/* tablet devices */
 @media only screen and (min-width:689px) and (max-width:991px) {
     /* -------------
         common styles
