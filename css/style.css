@@ -41,6 +41,14 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+label {
+    font-size: 24px;
+    color: #ffffff;
+    display: none;
+}
+#toggle {
+    display: none;
+}
 .menu {
     display: flex;
 }
@@ -299,3 +307,285 @@ footer {
     font-size: 18px;
 }
 
+/* -------------
+    Media Queries
+------------- */
+
+/* mobile devices */
+@media only screen and (max-width:688px) {
+    /* -------------
+        common styles
+    ------------- */
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+    /* -------------
+        navbar styles
+    ------------- */
+    header {
+        top: 30px;
+    }
+    nav {
+        width: 100%;
+        padding: 0 15px;
+    }
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        width: 200px;
+        position: fixed;
+        display: inline-block;
+        top: 75px;
+        left: -100%;
+        background: #000000;
+        height: 100vh;
+        padding: 15px;
+        transition: all linear 0.5s;
+        z-index: 99;
+    }
+    .menu li {
+        margin: 15px 0;
+    }
+    #toggle:checked + .menu {
+        left: 0;
+        display: inline-block;
+    }
+    /* -------------
+        banner-area styles
+    ------------- */
+    .banner-area {
+        padding: 110px 0 50px;
+    }
+    .banner-container, .highlight-container {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 15px;
+    }
+    .banner-content {
+        margin-bottom: 50px;
+    }
+    .banner-title {
+        font-size: 36px;
+        line-height: 50px;
+        width: 288px;
+        margin-bottom: 25px;
+    }
+    /* ------------- 
+        players styles
+    ------------- */
+    .players {
+        padding: 45px 0;
+    }
+    .players-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 24px;
+    }
+    /* ------------- 
+        about styles
+    ------------- */
+    .about {
+        padding: 60px 0 60px;
+    }
+    .about-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .about-thumbnail {
+        grid-column: 1/-1;
+        margin-bottom: 20px;
+    }
+    .about-content {
+        grid-column: 1/-1;
+    }
+    .section-title {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+    /* ------------- 
+        highlights styles
+    ------------- */
+    .highlights {
+        padding: 50px 0;
+    }
+    .highlight-content {
+        margin-bottom: 30px;
+    }
+    .highlight-title {
+        font-size: 30px;
+        line-height: 40px;
+        width: auto;
+    }
+    .highlight-discreption {
+        width: auto;
+    }
+    /* ------------- 
+        counter styles
+    ------------- */
+    .counter {
+        padding: 50px 0 25px;
+    }
+    .counter-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .counter-list {
+        margin-bottom: 25px;
+    }
+    .counter-number {
+        font-size: 40px;
+    }
+    .counter-text {
+        font-size: 16px;
+    }
+    /* ------------- 
+        footer styles
+    ------------- */
+    footer {
+        padding: 40px 0;
+    }
+    .footer-logo img {
+        width: 254px;
+    }
+}
+@media only screen and (min-width:689px) and (max-width:991px) {
+    /* -------------
+        common styles
+    ------------- */
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+    /* -------------
+        navbar styles
+    ------------- */
+    header {
+        top: 30px;
+    }
+    nav {
+        width: 100%;
+        padding: 0 15px;
+    }
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        width: 200px;
+        position: fixed;
+        display: inline-block;
+        top: 75px;
+        left: -100%;
+        background: #000000;
+        height: 100vh;
+        padding: 15px;
+        transition: all linear 0.5s;
+        z-index: 99;
+    }
+    .menu li {
+        margin: 15px 0;
+    }
+    #toggle:checked + .menu {
+        left: 0;
+        display: inline-block;
+    }
+    /* -------------
+        banner-area styles
+    ------------- */
+    .banner-area {
+        padding: 110px 0 50px;
+    }
+    .banner-container {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 15px;
+    }
+    .banner-content {
+        margin-bottom: 50px;
+    }
+    .banner-title {
+        font-size: 36px;
+        line-height: 50px;
+        width: 288px;
+        margin-bottom: 25px;
+    }
+    /* ------------- 
+        players styles
+    ------------- */
+    
+    .players-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* ------------- 
+        about styles
+    ------------- */
+    .about {
+        padding: 60px 0 60px;
+    }
+    .about-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .about-thumbnail {
+        grid-column: 1/-1;
+        margin-bottom: 20px;
+    }
+    .about-content {
+        grid-column: 1/-1;
+    }
+    .section-title {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+    /* ------------- 
+        highlights styles
+    ------------- */
+    .highlights {
+        padding: 50px 0;
+    }
+    .highlight-container {
+        width: 100%;
+        padding: 0 15px;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .highlight-content {
+        margin-bottom: 30px;
+    }
+    .highlight-title {
+        font-size: 30px;
+        line-height: 40px;
+        width: auto;
+    }
+    .highlight-discreption {
+        width: auto;
+    }
+    /* ------------- 
+        counter styles
+    ------------- */
+    .counter {
+        padding: 60px 0 35px;
+    }
+    .counter-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .counter-list {
+        margin-bottom: 25px;
+    }
+    .counter-number {
+        font-size: 46px;
+    }
+    .counter-text {
+        font-size: 18px;
+    }
+    /* ------------- 
+        footer styles
+    ------------- */
+    footer {
+        padding: 40px 0;
+    }
+    .footer-logo img {
+        width: 254px;
+    }
+}
