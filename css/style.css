@@ -20,7 +20,8 @@ a {
 .container {
     width: 1050px;
 }
-header, .banner-area, .players, .about{
+header, .banner-area, .players, .about,
+.highlights {
     display: flex;
     justify-content: center;
 }
@@ -82,7 +83,7 @@ nav {
     background: #2D25A0;
     padding: 135px 0 75px;
 }
-.banner-container {
+.banner-container, .highlight-container {
     width: 1140px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -174,7 +175,6 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 50px;
-    align-items: center;
 }
 .about-thumbnail img {
     width: 100%;
@@ -186,12 +186,13 @@ nav {
     font-weight: 700;
 }
 .section-title {
-    font-size: 60px;
+    font-size: 48px;
     line-height: 1;
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 700;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+    letter-spacing: 4px;
 }
 .about-discreption {
     color: #ffffff;
@@ -210,4 +211,30 @@ nav {
 .readmore-button:hover {
     background: #ffffff;
     color: #E02C6D;
+}
+/* -------------
+    highlights styles
+------------- */
+.highlights {
+    padding: 120px 0 115px;
+}
+.highlight-container {
+    grid-column-gap: 60px;
+}
+.highlight-title {
+    font-size: 48px;
+    line-height: 60px;
+    color: #0A0826;
+    font-weight: 700;
+    width: 470px;
+    margin-bottom: 10px;
+}
+.highlight-discreption {
+    color: #6C6C6C;
+    line-height: 28px;
+    width: 420px;
+    margin-bottom: 20px;
+}
+.highlight-thumbnail img {
+    width: 100%;
 }
